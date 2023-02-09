@@ -1,0 +1,9 @@
+<div class="modal open" *ngIf="showModal">
+  <div class="modal-overlay">
+    <button (click)="toggleModal()">close</button>
+    <div class="modal-content">
+      <!-- here goes dynamic content i.e form, filter -->
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>
